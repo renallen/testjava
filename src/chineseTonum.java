@@ -54,7 +54,7 @@ public class chineseTonum {
 	
 	public static void main(String []arg) {
 		int test;
-		String CNstr="一亿一百零一万零九百一十";
+		String CNstr="一亿一百零一万四千九百一十一";
 		test= chinese2num(CNstr);
 		System.out.println(test);
 //		for(int i =0;i<result.length();i++) {
