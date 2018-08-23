@@ -107,7 +107,8 @@ public class water {
 		
 }
 class trans_state{   
-	//倒水过程
+	//倒水过程 
+	//
 	int[]   water_state;		//当前水量
 	int[]   trans_state;		//到达当前水量的过程
 	trans_state() {
