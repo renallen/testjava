@@ -97,6 +97,7 @@ public class water {
 		}
 		public static void main(String []arg) {
 			init();
+			
 			System.out.println("初始水量 8 0 0");
 			search(process.get(0));
 			System.out.println("结束，总共"+m+"种方法");
@@ -108,7 +109,7 @@ public class water {
 }
 class trans_state{   
 	//倒水过程 
-	//
+	//l
 	int[]   water_state;		//当前水量
 	int[]   trans_state;		//到达当前水量的过程
 	trans_state() {
