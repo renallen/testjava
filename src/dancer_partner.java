@@ -64,6 +64,7 @@ public class dancer_partner {
 }
 class partner{
 	//舞伴的基本数据
+	
 	int current;
 	int next;
 	int Count;
