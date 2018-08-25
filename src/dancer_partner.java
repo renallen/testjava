@@ -1,6 +1,7 @@
 
 
 public class dancer_partner {
+	
 	static int Count;
 	static partner[] boys;
 	static partner[] girls;
@@ -13,7 +14,7 @@ public class dancer_partner {
 				boys[bid].current=gid;
 			}else {
 				int gcid=girls[gid].current;
-				if(Isperfect(girls[gid],gcid,bid) ) {//判断更喜欢哪个
+				if(Isperfect(girls[gid],gcid,bid) ) {
 					boys[gcid].current=-1;
 					boys[bid].current=gid;
 					girls[gid].current=bid;
@@ -27,6 +28,7 @@ public class dancer_partner {
 	}
 
 	static int getalone(partner[] boys,int Count) {
+		//找到没有匹配的男孩
 		for(int i=0;i<Count;i++) {
 			if(boys[i].current==-1) {
 				return i;
@@ -35,6 +37,7 @@ public class dancer_partner {
 		return -1;
 	}
 	static boolean Isperfect(partner p,int gcid,int bid) {
+		//判断更喜欢哪个
 		for(int i=0;i<p.Count;i++) {
 			if(p.Plist[i]==gcid){
 				return false;
@@ -60,6 +63,7 @@ public class dancer_partner {
 
 }
 class partner{
+	//舞伴的基本数据
 	int current;
 	int next;
 	int Count;
